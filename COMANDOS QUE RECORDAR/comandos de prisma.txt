@@ -1,0 +1,13 @@
+⚠️ Un pequeño "detallito" técnico
+Veo que ejecutaste npx prisma dev --name init. Este comando es el nuevo "Development Mode" de Prisma 7 que mantiene una conexión viva.
+
+Sin embargo, para crear tus tablas permanentemente y generar el historial de archivos en tu carpeta prisma/migrations, lo que normalmente querrás usar es el comando de Migración.
+
+
+CHECAR BD:
+npx prisma studio
+
+para hacer migraciones:
+npx prisma migrate dev --name init
+
+npx prisma generate --schema=../prisma/schema.prisma

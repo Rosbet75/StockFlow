@@ -1,0 +1,6 @@
+#crear nueva aplicacion
+
+npx create-next-app@latest .
+
+#crear nuevaa plicacion en un subfolder y sin el problema de las mayusculas
+npx create-next-app@latest web --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"
